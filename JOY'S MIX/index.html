@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joy's Mix • Luxury In Every Sip</title>
+  <meta name="description" content="Zobo, Tiger Nut, Yogurt, Parfait, Smoothies & Fruit Juices—100% natural. Best served chilled." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Baloo+2:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Fruitopia home">
+        <img src="images/file_000000001ed06243a7a9fab4e729d303_1.png" alt="Fruitopia logo" />
+        <span>JOY'S MIX</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#specials">Specials</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--pill" href="#order">Order Now</a>
+      </nav>
+      <button class="burger" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Carousel -->
+  <section id="home" class="hero">
+    <div class="hero-slide current" style="--bg:url('assets/slide1.jpg')">
+      <div class="hero-content container">
+        <div class="kicker">Luxury In Every Sip</div>
+        <h1>Freshness in Every Drop & Bite</h1>
+        <p>Order Zobo, Tiger Nut, Yogurt, Parfait, Smoothies and Fruit Juices — crafted daily with 100% natural ingredients.</p>
+        <div class="actions">
+          <a class="btn" href="#products">Shop Bestsellers</a>
+          <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://wa.me/2347039812009">Order on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide" style="--bg:url('assets/slide2.jpg')">
+      <div class="hero-content container">
+        <div class="kicker">100% Natural • No Preservatives</div>
+        <h1>Zobo, Smoothies & More</h1>
+        <p>Bright flavors, bold colors, real fruit. Best served chilled ❄️</p>
+        <div class="actions">
+          <a class="btn" href="#specials">See Specials</a>
+          <a class="btn btn--ghost" href="#contact">Say Hello</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide" style="--bg:url('assets/slide3.jpg')">
+      <div class="hero-content container">
+        <div class="kicker">Made Fresh Daily</div>
+        <h1>Tiger Nut • Yogurt • Parfait</h1>
+        <p>Creamy, crunchy, fruity—pick your mood and we’ll craft it.</p>
+        <div class="actions">
+          <a class="btn" href="#products">Browse Menu</a>
+          <a class="btn btn--ghost" href="#order">Quick Order</a>
+        </div>
+      </div>
+    </div>
+    <button class="hero-arrow left" id="prevSlide" aria-label="Previous slide">‹</button>
+    <button class="hero-arrow right" id="nextSlide" aria-label="Next slide">›</button>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- Promo band -->
+  <div class="promo">
+    <div class="container">
+      <span>✨ PROMO: <strong>Every 5 products = 10% OFF</strong> (mix & match; stacks for 10, 15, ...)</span>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="head">
+        <h2>Shop Bestsellers</h2>
+        <p class="sub">Fresh, colorful and crafted with love.</p>
+      </div>
+
+      <div class="grid" id="catalog">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials -->
+  <section id="specials" class="section alt">
+    <div class="container">
+      <div class="head">
+        <h2>Specials & Promotions</h2>
+        <p class="sub">Save more when you stock up.</p>
+      </div>
+      <div class="special-card">
+        <h3>Buy 5, Get 10% OFF</h3>
+        <p>Mix & match across Zobo Drink, Tiger Nut, Yogurt, Parfait, Smoothie, and Fruit Juice. Discount stacks automatically in checkout.</p>
+        <a class="btn btn--light" href="#products">Start Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container about">
+      <div class="panel">
+        <h3>Our Promise</h3>
+        <p>We craft small-batch drinks and treats with 100% natural ingredients. No preservatives. Ever. Sourced locally, served chilled, and delivered with love.</p>
+        <ul>
+          <li>Quality you can taste</li>
+          <li>Hygiene-first production</li>
+          <li>Community-minded sourcing</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>The Lineup</h3>
+        <p>Zobo Drink • Tiger Nut • Yogurt • Parfait • Smoothie • Fruit Juice</p>
+        <p><strong>Best served chilled ❄️</strong></p>
+        <img class="sticker" src="assets/sticker.jpg" alt="Joy's Mix multipurpose sticker" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section alt">
+    <div class="container">
+      <div class="head">
+        <h2>Customers Love Joy's Mix</h2>
+        <p class="sub">Real words from real taste buds.</p>
+      </div>
+      <div class="reviews" id="reviews"><!-- Injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- Contact & Quick Order -->
+<section id="contact" class="section">
+  <div class="container contact">
+    <div class="panel">
+      <h3>Contact & Orders</h3>
+
+      <!-- WhatsApp -->
+      <div class="row">
+        <img class="icon" src="images/b1a67d9315a05ed2f49326ef6bdc0fd5.jpg" alt="WhatsApp" />
+        <a href="https://wa.me/2347039812009" target="_blank" rel="noopener">
+        07039812009
+        </a>
+      </div>
+
+      <!-- Instagram -->
+      <div class="row">
+        <img class="icon" src="images/463e05c0611ec0c71cb14d62ec0b24b1.jpg" />
+        <a href="https://www.instagram.com/joymich200" target="_blank" rel="noopener">
+          @joymich200
+        </a>
+      </div>
+
+      <!-- Snapchat -->
+      <div class="row">
+        <img class="icon" src="images/2be521c9d6772bab3c9c7ef8c2645f5e.jpg" alt="Snapchat" />
+        <a href="https://www.snapchat.com/add/joymich200" target="_blank" rel="noopener">
+          Snapchat
+        </a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="row">
+        <img class="icon" src="images/cad6039c053896e2719e664ff6b16705.jpg" alt="YouTube" />
+        <a href="https://youtube.com/@joymich200" target="_blank" rel="noopener">
+          YouTube
+        </a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="row">
+        <img class="icon" src="images/2bd3f84207ea9f55d8b9f9157dc221da.jpg" alt="Facebook" />
+        <a href="https://www.facebook.com/share/1Fsz6QbQ4v/" target="_blank" rel="noopener">
+          Facebook
+        </a>
+      </div>
+
+      <!-- Twitter / X -->
+      <div class="row">
+        <img class="icon" src="images/9e0f389dac42629515b009524ed47ed7.jpg" alt="X (Twitter)" />
+        <a href="https://x.com/Joymich200" target="_blank" rel="noopener">
+          X (Twitter)
+        </a>
+      </div>
+
+      <!-- Email -->
+<div class="row">
+  <img class="icon" src="images/26c7089c48f9bb763e9cca3db502bd57.jpg" alt="Email" />
+  <a href="mailto:joymichaelcares@gmail.com">joymichaelcares@gmail.com</a>
+</div>
+
+      <!-- Phone -->
+      <div class="row">
+        <img class="icon" src="images/c690610d46146f35c654816b89c433d0.jpg" alt="Phone" />
+        <a href="tel:+2347039812009">+234 703 981 2009</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Contact Form -->
+      <div class="panel">
+        <h3>Send a Message</h3>
+        <form id="contactForm" action="https://formspree.io/f/xjkelypa" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send</button>
+          <p id="formStatus" class="tiny" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- Quick Order to WhatsApp -->
+      <div class="panel" id="order">
+        <h3>Quick Order (WhatsApp)</h3>
+        <p>Tell us what you’d like and we’ll confirm on WhatsApp.</p>
+        <form id="waForm">
+          <label for="orderText" class="tiny">Your order</label>
+          <textarea id="orderText" rows="5" placeholder="e.g., 6 bottles Zobo, 4 Tiger Nut, 3 Parfaits (deliver to Yaba)"></textarea>
+          <button class="btn" type="submit">Send to WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container foot">
+      <div class="foot-brand">
+        <img src="images/file_000000001ed06243a7a9fab4e729d303_1.png" alt="Joy's Mix logo small" />
+        <strong>JOY'S MIX</strong>
+      </div>
+      <div class="tiny">© <span id="year"></span> Joy's Mix • Freshness in Every Drop & Bite.</div>
+    </div>
+
+    <!-- Floating Cart Button -->
+  <div class="cart-toggle"><button class="fab" id="openCart">🛒 Cart • <span id="cartCount">0</span></button></div>
+
+ <!-- Cart Drawer -->
+<aside class="drawer" id="cartDrawer" aria-hidden="true">
+  <header class="container">
+    <button id="backToShop" class="back-btn">←</button>
+    <h3 style="margin:8px 0">Your Cart</h3>
+  </header>
+  <main id="cartItems"></main>
+  <footer>
+    <div class="container">
+      <div class="totals">
+        <div class="row-line"><span>Subtotal</span><strong id="subTotal">₦0</strong></div>
+        <div class="row-line"><span>Promo (Every 5 = 10% off)</span><strong id="discount">- ₦0</strong></div>
+        <div class="row-line"><span><strong>Total</strong></span><strong id="grandTotal">₦0</strong></div>
+        <div class="small">Discount stacks: e.g., 10 items = 20% off.</div>
+      </div>
+      <button class="checkout" id="checkoutBtn">Checkout via WhatsApp</button>
+    </div>
+  </footer>
+</aside>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-pill" href="https://wa.me/2347039812009" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬 Chat on WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
